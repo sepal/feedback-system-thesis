@@ -9,6 +9,7 @@ In this chapter I'll present some of the most popular solutions and compare them
 \section{Existing solutions/Literature studies}
 
 % todo: Is it better to call it "Literature studies" and can I still present existing Feedback systems? Or should be more about ways how to collect Feedback, e.g. kanban vs. ticket system
+I this chapter I will present some typical forms of collecting feedback, as well as some system that use this methods.
 
 \subsection{Contact form} 
 
@@ -18,7 +19,16 @@ In this chapter I'll present some of the most popular solutions and compare them
 
 \subsection{Kanban}
 
-(basically our system)
+Kanban, which is Japanese and literally translates to signal board, is a system  originally invented at the Japanese car manufacturer Toyota, in order to improve production speed and lower costs. In this environment cards are used to signal a supplier the depletion of a part or some material. The supplier would then restock the needed items to certain limit, thus implementing a consumption driven supply chain.
+
+In 2007 David R. Anderson presented an adaption of this system for software engineering. Manufacturing products and software development are two very different tasks, and thus the Kanban system used by Toyota can't be used literally%???%
+ for IT projects. David Anderson combined the essence of the system with lean software approaches to create software development process. 
+ 
+ In this new system each card represents work that is pulled through several steps. Exemplary steps would be "Backlog", "In Progress", "In testing" and "Deployed". Steps where actual work has to be done, like "In Progress" or "In testing" have to be limited, so that the work capacity of the development team is represented. If for example within team with two developers has two tickets for "Work in progress", it shouldn't accept a 3rd one, since most probably the two programmers can't work on it. Only after finishing one of the two existing tickets, and pushing them to the next lane, the next card can be pulled to the "Work in progress" step. 
+
+With this system it's easy to determine how much workload exists, what the throughput is and thus optimise workflow.
+
+% Explain how this fits into buck tracking, collecting feedback.
 
 \section{Comparison of existing solutions}
 
