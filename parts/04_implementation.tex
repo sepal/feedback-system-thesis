@@ -1,1 +1,13 @@
 \chapter{Implementation}
+
+After choosing kanban as the base for the feedback system and planning out some details specific to the aurora eLearning system it was time to implement it.
+
+\section{Used tools}
+
+The system had to be implemented into the existing software stack, since a micro-service architecture where the feedback software would be it's own application, was not feasible due to constraints with the server architecture but also with the login system. 
+
+The backend code was thus developed, like the rest of aurora, in django, an open source web framework for the programming language python. 
+
+From the start I knew there the user interface would require a lot of client side code, code that runs in the users browser, rather then on the server. This not required to implement the drag and drop of the kanban cards into the steps, but also to immediately update smaller elements like the vote counter in realtime. 
+
+For this part of the work I choose the framework React. This programming library, developed by the Social Media company Facebook and released first in 2013, was developer to implement complex user interfaces using the browsers build in programming language Javascript. It perfectly fit my needs, since there were several extensions, like a low level drag and drop library, and system to keep and update the current state of a web application.
